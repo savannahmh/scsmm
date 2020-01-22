@@ -1,0 +1,291 @@
+html{
+	width:100%; 
+	height:100%; 
+	padding:0px; 
+	margin:0px;
+	background: #191d1e; /* Old browsers */
+    background-image: url("honeycomb.png");
+    background-repeat: repeat;
+    scroll-behavior: smooth;
+
+}
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+ul li a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+
+ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+ul li a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+
+
+
+
+
+
+
+#wrapper{
+    width:100%;
+    height: 100%;
+    margin: 137px auto 0 auto;
+}
+
+
+#header{
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-family: 'Barlow Condensed';
+    font-size: 23px;
+}
+
+
+#section1{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+#section1 p{
+    width: 50%;
+    text-align: center;
+}
+
+
+#consultationdiv{
+    display: inline-block;
+    padding-right: 100px;
+    width: 300px;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+#pitchstrategydiv{
+    width: 300px;
+    display: inline-block;
+    padding-right: 100px;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+#gettoworkdiv{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+#section2{
+    text-align: center;
+    width: 100%;
+    
+}
+
+
+#processsteps{
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#section1 p {
+    margin: 0 auto;
+}
+
+#theprocess{
+    padding-top: 100px;
+}
+
+
+
+
+
+
+
+#contact{
+    padding: 75px 0px 75px 0px;
+}
+
+
+
+
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #2B2B2B;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+
+#contact{
+    text-align: center;
+}
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #444444;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a[ id= "section1" ]:target ~ #main article.panel {
+-webkit-transform: translateY( 0px);
+transform: translateY( 0px );
+}
+
+a[ id= "section2" ]:target ~ #main article.panel {
+-webkit-transform: translateY( -500px );
+transform: translateY( -500px );
+}
+a[ id= "contact" ]:target ~ #main article.panel {
+-webkit-transform: translateY( -1000px );
+transform: translateY( -1000px );
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1120px) {
+  #consultationdiv{
+    padding-right: 0px;
+}
+
+
+#pitchstrategydiv{
+    padding-right: 0px
+}
+}
+
+
+
+
+
